@@ -3,9 +3,9 @@
 [ -z "${UI_PASS}" ] && UI_PASS=test
 
 #OPTS_STOP=--rm
-OPTS_STOP=--restart always 
+OPTS_STOP="--restart always" 
 
-cat <<"EOM"
+cat <<EOM
 UI login: http://localhost:${UI_PORT}
 Username: [${UI_USER}]
 Password: [${UI_PASS}]
